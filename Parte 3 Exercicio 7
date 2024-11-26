@@ -1,0 +1,5 @@
+Resposta:  Este código percorre um vetor chamado sensorReadings com o tamanho 
+especificado por tamanhoVetor. 
+A cada iteração, verifica se o valor do índice atual é igual a 150. 
+Se encontrar um valor igual a 150, a execução do laço é interrompida imediatamente 
+devido ao comando break.
