@@ -1,0 +1,13 @@
+Resposta: 
+int ledPins[] = {2, 3, 4, 5}; 
+
+void setup() { 
+Serial.begin(9600); 
+
+for (int i = 0; i < 4; i++) {
+
+Serial.println(ledPins[i]); 
+} 
+} 
+void loop() { 
+}
