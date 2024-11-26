@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+int main() { 
+    int passos, total_passos = 0, meta = 10000; 
+  
+    printf("Bem-vindo ao aplicativo de monitoramento de passos!\n"); 
+  
+    while (total_passos < meta) { 
+        printf("Digite o número de passos dados: "); 
+        scanf("%d", &passos); 
+  
+        if (passos > 0) { 
+            total_passos += passos; 
+            printf("Total de passos até agora: %d\n", total_passos); 
+  
+            if (total_passos >= meta) { 
+                printf("Parabéns! Você alcançou a meta de 10.000 passos!\n"); 
+                break; 
+            } 
+        } else { 
+            printf("Número inválido de passos. Por favor, insira um valor positivo.\n"); 
+        } 
+    } 
+  
+    printf("Monitoramento encerrado. Total de passos: %d.\n", total_passos); 
+    return 0; 
+} 
