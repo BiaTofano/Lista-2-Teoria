@@ -1,0 +1,57 @@
+#include <stdio.h> 
+#include <stdlib.h>
+#include <math.h> 
+
+void calcularAnalise(int dias) { float precos[dias]; float soma = 0.0, media = 0.0, 
+desvio_padrao = 0.0; 
+
+for (int i = 0; i < dias; i++) { 
+    printf("Digite o preço da ação no dia %d: ", i + 1); 
+    scanf("%f", &precos[i]); 
+    soma += precos[i]; 
+} 
+ 
+
+media = soma / dias; 
+ 
+
+for (int i = 0; i < dias; i++) { 
+    desvio_padrao += pow(precos[i] - media, 2); 
+} 
+desvio_padrao = sqrt(desvio_padrao / dias); 
+ 
+
+printf("\n--- Análise do Desempenho das Ações ---\n"); 
+printf("Média dos preços: %.2f\n", media); 
+printf("Desvio padrão: %.2f%%\n", desvio_padrao); 
+ 
+if (desvio_padrao < 5.0) { 
+    printf("Desempenho das ações: Estável\n"); 
+} else { 
+    printf("Desempenho das ações: Volátil\n"); 
+} 
+  
+} 
+int main() { int dias; char opcao; 
+do { 
+    printf("\nDigite o número de dias que deseja analisar: "); 
+    scanf("%d", &dias); 
+ 
+    if (dias <= 0) { 
+        printf("Número de dias inválido! Por favor, insira um valor 
+maior que zero.\n"); 
+        continue; 
+    } 
+ 
+    calcularAnalise(dias); 
+ 
+    
+    printf("\nDeseja analisar novos dados? (S/N): "); 
+    scanf(" %c", &opcao); 
+} while (opcao == 'S' || opcao == 's'); 
+ 
+printf("Programa encerrado. Obrigado por utilizar o analisador de 
+desempenho de ações!\n"); 
+return 0; 
+  
+}
