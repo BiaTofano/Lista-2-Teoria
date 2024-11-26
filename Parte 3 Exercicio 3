@@ -1,0 +1,5 @@
+Resposta: float temperaturas[] = {25.5, 26.0, 24.8, 27.3, 26.5}; 
+float define o tipo dos elementos no vetor (neste caso, números decimais). 
+[] indica que o tamanho será automaticamente ajustado de acordo com o número de 
+valores fornecidos. 
+{25.5, 26.0, 24.8, 27.3, 26.5} são os valores atribuídos ao vetor. 
