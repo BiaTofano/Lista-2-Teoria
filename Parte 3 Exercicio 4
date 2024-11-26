@@ -1,0 +1,4 @@
+Resposta:  Este código usa um laço for para iterar sobre os primeiros 4 elementos do vetor 
+ledPins.A cada iteração, ele imprime o valor armazenado no índice atual (i) do vetor 
+ledPins na saída serial.Serial.println() envia os valores para o monitor serial, 
+adicionando uma nova linha após cada valor. Ou seja, depende dos valores contidos no vetor ledPins.
