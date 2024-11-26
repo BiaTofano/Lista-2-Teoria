@@ -1,0 +1,4 @@
+Resposta: O comando atribui o valor lido da porta analógica A1 à posição 3 do vetor 
+cameraData. Exemplo: Este código pode ser usado para armazenar dados de um 
+sensor analógico, como um sensor de luz ou temperatura, em um vetor para 
+processamento posterior. 
